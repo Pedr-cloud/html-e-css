@@ -4,34 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+        </span>
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
                 <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
             </ul>
         </menu>
     </header>
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iste tempore natus in officia, fuga cupiditate voluptates repellat, unde neque id reprehenderit dolores eveniet iusto reiciendis nam illo corporis hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsum maxime aspernatur ullam dignissimos ipsam itaque eos animi, alias debitis ad sint expedita laudantium rem harum labore, nesciunt velit officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem similique consectetur vitae perspiciatis, sunt sapiente aliquid dolorem perferendis repudiandae et facere incidunt quisquam, laboriosam, corrupti quae. Ullam ipsa temporibus autem?</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, quasi cumque? Odit accusantium quibusdam, sit consequuntur vitae quam? Earum libero recusandae officiis labore natus animi distinctio in! Obcaecati, ut eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam aliquid incidunt modi blanditiis ab iste veniam alias magnam quos eligendi dignissimos, vitae consectetur asperiores non neque error illum et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor a iste facilis eius neque, ducimus ea veniam voluptate corrupti ad architecto. Quibusdam ducimus assumenda eos cupiditate quae illum temporibus.</p>
-
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda vitae deserunt laudantium delectus provident accusantium necessitatibus. Fugit aliquam, tempora eos dolores ipsam dolorum totam omnis aperiam nisi sint unde dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non et dignissimos, velit nemo minima, quae necessitatibus asperiores ipsam placeat ab quos vero dolor sint corrupti ex quaerat facilis, a eaque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dignissimos quibusdam illo nemo unde et consequatur vitae sit, asperiores laborum ipsa aliquid repudiandae eum, quod aperiam debitis illum pariatur a.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque nesciunt totam. Tenetur accusantium ad sint blanditiis enim quam distinctio. Commodi deserunt veritatis ipsum error nostrum minus odit nemo ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut obcaecati perferendis voluptate dolores in repellat labore aperiam esse nulla quisquam blanditiis nobis nemo rerum totam quam laborum, molestias veritatis sapiente!</p>
 
         </article>
     </main>
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
@@ -40,6 +52,5 @@
             }
         }
     </script>
-    
 </body>
 </html>

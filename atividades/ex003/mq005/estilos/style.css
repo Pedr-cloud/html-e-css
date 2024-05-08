@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
+
     margin: 0px;
     padding: 0px;
 }
@@ -11,7 +12,7 @@ body, html {
 }
 
 header {
-    background-color: rgb(146, 143, 143);
+    background-color: rgb(175, 173, 173);
 }
 
 header > h1 {
@@ -19,8 +20,8 @@ header > h1 {
     text-align: center;
 }
 
-i#burguer {
-    background-color: rgb(48, 48, 48);
+span#burguer {
+    background-color: rgb(48, 48,48 );
     color: white;
     display: block;
     text-align: center;
@@ -28,7 +29,7 @@ i#burguer {
     cursor: pointer;
 }
 
-i#burguer:hover{
+span#burguer:hover {
     background-color: white;
     color: black;
 }
@@ -47,7 +48,8 @@ menu a {
     text-decoration: none;
     text-align: center;
     background-color: rgb(87, 87, 87);
-    border-top: 2px solid gray;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.233);
 }
 
 menu a:hover {
@@ -65,11 +67,10 @@ main {
 
 article > h2 {
     padding-bottom: 20px;
-    text-align: center;
 }
 
 article > p {
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-indent: 20px;
 }
